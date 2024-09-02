@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIETY OF SOULS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <h1>SOCIETY OF SOULS</h1>
+
+    <!-- New button added below the header -->
+    <button id="connect-wallet" class="random-button">Connect</button>
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker at the initial view location
+        var marker = L.marker([51.505, -0.09]).addTo(map);
+        marker.bindPopup("<b>Project in you local area</b><br>Represented by XnX<br>(Only KYC users are able to suggest projects) <br><br>Persons suggesting are getting the funds and are responsible to give us a track of every dime spent via uploading proofs as NFTs (they track every information to prosecute them after if they lie)<br>This way honest and trustworthy person that wonna get in politics can get good foundations by proving their merit to society (meritocracy)").openPopup();
+
+        var marker = L.marker([45, 15]).addTo(map);
+        marker.bindPopup("<b>8 000 000 000!</b><br>SOULS WATCHING<br><br>while zoomed out it says total and when user zooms in it spreads out until you get to the specific one<br>users can tag their own home adresses if they want").openPopup();
+
+        var marker = L.marker([40, 15]).addTo(map);
+        marker.bindPopup("<b>BASIC users</b><br>they have ability only to ping themself (their hovering soul position) and to donate to project<br>this way we can see how many souls are interested in which area and this way we can all unite on one platform and disucss real time problems not what media pushes us... (users mark a spot and write it on HCS, HCS reads users ID and deletes previous ping = 1ACC === 1ping) <br><br>HOW TO BECOME BASIC <br><br>mint NFT, this way users need to invest time and buy some hbar and we are making it much harder for bots (buying hbar = track of purchase = almost impossible to make bots anonymously) ").openPopup();
+
+        var marker = L.marker([35, 15]).addTo(map);
+        marker.bindPopup("<b>KYC users</b><br>they get KYCed via authority (for starter via us, the community)<br>how to?<br>we need trustworthy authority (nothing offical it could be trustworthy normal civil person) that creates IRL NFT with details of your (my real ID) <br>{name:Josip,<br>surname:Bonic,<br>dateofbirth:11.03.2000,<br>accountID:0.0.981180}<br>and we make database of trustworthy NFT creators<br><br>this way we can follow the trial and find a person if they fail {nftCreatedBy:x}").openPopup();
+
+        var marker = L.marker([30, 15]).addTo(map);
+        marker.bindPopup("<b>MORE TIRES OF APPROVAL</b><br>we can add chat feature to BASIC users, if they dont wonna confirm their username and date of birth we can add same process IRL confirmation just to enable sending meassages in group chats/commenting on projects.").openPopup();
+
+        var marker = L.marker([25, 15]).addTo(map);
+        marker.bindPopup("SPAWN POINT = ANTARTICA BEACAUSE IT IS ONLY PLACE ON EARTH THAT NO ONE OWNS, JUST LIKE INTERNET SPACE (WHICH IS GOING TO BE OVERTAKEN BY HEDERA xD)").openPopup();
+
+        var marker = L.marker([20, 15]).addTo(map);
+        marker.bindPopup("<b>HELLO FUTURE</b>").openPopup();
+
+        var marker = L.marker([45.899438,15.947938]).addTo(map);
+        marker.bindPopup("<b>USER ID</b><br>0.0.981180/1ksn1ks").openPopup();
+
+        document.getElementById('connect-wallet').addEventListener('click', async function() {
+            if (typeof window.ethereum !== 'undefined') {
+                try {
+                    // Request account access if needed
+                    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+
+                    // MetaMask is installed
+                    console.log('MetaMask is connected with account:', accounts[0]);
+                    alert('Connected with account: ' + accounts[0]);
+
+                    // You can now use the account ID to interact with smart contracts, etc.
+                } catch (error) {
+                    console.error('User denied account access', error);
+                    alert('User denied account access');
+                }
+            } else {
+                console.error('MetaMask is not installed!');
+                alert('Please install MetaMask/Hashpack/web3connect!');
+            }});
+
+    </script>
+</body>
+</html>
+
+    
