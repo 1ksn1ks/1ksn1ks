@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Set the entire background to black */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color for contrast */
+}
+
+/* Style the header */
+h1 {
+    color: #00caff; /* A contrasting color for the header text */
+    text-align: center;
+
+    background-color: #333; /* Dark gray background for the header */
+    margin: 0;
+}
+p {
+    color: #00caff; /* A contrasting color for the header text */
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark gray background for the header */
+    margin: 0;
+}
+
+/* Style the map container */
+#map {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    height: 1110px;
+    border: 2px solid #555; /* Lighter border color for contrast */
+}
+
+/* Random CSS styling for the button */
+.random-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00caff; /* Same color as the header text */
+    color: #fff;
+    border: 2px solid #00caff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.random-button:hover {
+    background-color: #0075a2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
