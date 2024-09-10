@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@hashgraph/sdk": "^2.50.0",
-    "express": "^4.19.2"
-  }
-}
