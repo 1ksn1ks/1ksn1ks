@@ -5,4 +5,4 @@
 - 😄 Pronouns: im sheep, beeeeeeee   inwashed
 - ⚡ Fun fact: world is cruel
 
-mapbox + hedera
+maps + hedera
